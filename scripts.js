@@ -20,98 +20,7 @@ requestAnimationFrame(raf)
 
 let tl=gsap.timeline()
 
-tl.from('#im1',{
-    scale:0,
-    duration:0.25
-})
-
-tl.from('#im2',{
-    scale:0,
-    duration:0.25
-})
-
-tl.from('#im3',{
-    scale:0,
-    duration:0.25
-})
-
-tl.from('#im4',{
-    scale:0,
-    duration:0.25
-})
-
-tl.from('#im5',{
-    scale:0,
-    duration:0.25
-})
-
-tl.from('#im6',{
-    scale:0,
-    duration:0.25
-})
-
-tl.from('#im7',{
-    scale:0,
-    duration:0.25
-})
-
 gsap.registerPlugin(SplitText);
-let mySplit = SplitText.create('.gwc',{type:'chars'});
-let chars = mySplit.chars;
-
-gsap.from(chars,{
-    y:600,
-    stagger:0.1,
-    duration:1.25
-})
-
-tl.to(chars,{
-    delay:2,
-    y:-300,
-    stagger:0.1,
-    duration:1.25
-})
-
-tl.to('#im7',{
-    scale:0,
-    duration:0.1
-})
-
-tl.to('#im6',{
-    scale:0,
-    duration:0.1
-})
-
-tl.to('#im5',{
-    scale:0,
-    duration:0.1
-})
-
-tl.to('#im4',{
-    scale:0,
-    duration:0.1
-})
-
-tl.to('#im3',{
-    scale:0,
-    duration:0.1
-})
-
-tl.to('#im2',{
-    scale:0,
-    duration:0.1
-})
-
-tl.to('#im1',{
-    scale:0,
-    duration:0.1
-})
-
-tl.to('.preloader',{
-    opacity:0,
-    duration:1,
-    zIndex:0
-})
 
 tl.from('.vidbox video',{
     rotate:'45deg',
@@ -182,15 +91,14 @@ gsap.utils.toArray('.diffImageClass img').forEach((img, i) => {
     });
 });
 
-gsap.to('.footer img',{
+gsap.to('.logoimage',{
     rotate:'360deg',
     repeat:-1,
     duration:45
 })
 
 gsap.to('.circle',{
-    rotate:'360deg',
-    duration:60,
-    repeat:-1
+    rotate:'105deg',
+    duration:2,
 })
 

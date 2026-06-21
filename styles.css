@@ -56,61 +56,6 @@ html , body{
   src: url(FONTS/InterTight-Light.ttf);
 }
 
-.preloader{
-    position: absolute;
-    width: 100%;
-    height: 100vh;
-    background-color: black;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 100;
-}
-
-.bo{
-    position: absolute;
-    z-index: 10;
-    overflow: hidden;
-    mix-blend-mode:difference;
-}
-
-.bo h1{
-    color: #d3ae4f;
-    font-size: 250px;
-    line-height: 240px;
-    font-family: 'sfproreg';
-}
-
-.preloader img{
-    position: absolute;
-    width: 200px;
-}
-
-#im1{
-    rotate: -5deg;
-}
-
-#im2{
-    rotate: 5deg;
-}
-
-#im3{
-    rotate: -10deg;
-}
-
-#im4{
-    rotate: 10deg;
-}
-
-#im5{
-    rotate: -15deg;
-}
-
-#im6{
-    rotate: 15deg;
-}
-
 .main{
     width: 100%;
     background-color: #000;
@@ -146,7 +91,7 @@ html , body{
 
 .navbar a{
     text-decoration: none;
-    color: white;
+    color:#d3ae4f;
 }
 
 .title{
@@ -337,7 +282,7 @@ html , body{
     text-decoration: none;
 }
 
-.footer img{
+.logoimage{
     position: absolute;
     z-index: 0;
     top: 50px;
